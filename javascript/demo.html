@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+
+    Enter the value a:<input type="text" id="one"/>
+    Enter the value b:<input tupe="text"  id="two"/>
+    <button onclick="onSubmitHandler()">Submit</button>
+    <p id="demo"></p>
+    
+    <script>
+        var numBer=20;
+        document.write(numBer+"</br>");
+        document.write(typeof numBer+"</br>");
+        numBer="Dev";
+        document.write(numBer+"</br>");
+        document.write(typeof numBer+"</br>");
+        var a=10;
+        var b=10;
+        var c="10";
+        document.write(a==b);
+        document.write(a===b);
+        document.write(a==c);
+        document.write(a===c);
+        function tea(){
+            document.write("welcome to have tea");
+            return "tea";
+        }
+        function coffee(){
+            document.write("welcome to have coffee");
+            return "coffee";
+        }
+        var a = "tea";
+        var result = a==="coffee" ? "Yes":'No';
+        document.write(result+"<br/>");
+        var resultSecond = a==="coffee" ? 1:0;
+        document.write(resultSecond+"<br/>");
+        var resultThird = a==="coffee" ? true:false;
+        document.write(resultThird+"<br/>");
+        var resultFour = a==="coffee" ? coffee():tea();
+        document.write("<br/>"+resultFour+"<br/>");
+
+
+
+         function onSubmitHandler(){
+             var a = document.getElementById('one').value;
+             var b = document.getElementById('two').value;
+             var result = Number(a) + Number(b);
+             document.getElementById('demo').innerHTML = result;
+         }
+    </script>
+</body>
+</html>

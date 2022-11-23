@@ -1,0 +1,15 @@
+.img{
+    float: right;
+    padding-right: 100px;
+    padding-top: 20px;
+    width: 750px;
+}
+.nav{
+    background-color: rgb(105, 102, 102);
+    width: 275px;
+    height:275px;
+    text-decoration: none;  
+}
+body{
+    background-color: rgb(191, 189, 189);
+}

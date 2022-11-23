@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>OddEven</title>
+</head>
+<body>
+    <center>
+        <h1>Odd or Even</h1>
+        <p>Enter a number:<input type="text" id="number"></p>
+        <button onclick="check()">Check</button>
+        <p><input type="text" id="ans"></p>
+    </center>
+    <script>
+        function check() {
+            var num = document.getElementById("number").value;
+            if (num % 2 == 0) {
+                var print = "The number is EVEN";
+                document.getElementById("ans").value = print;
+            }
+            else {
+                var print2 = "The number is ODD";
+                document.getElementById("ans").value = print2;
+            }
+        }
+    </script>
+</body>
+</html>

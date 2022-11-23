@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Primenumber</title>
+</head>
+<body>
+    <center>
+        <h1>To find the Prime Number</h1>
+        <p>Enter a number:<input id="num"></p>
+        <button onclick="prime()">Prime or Not</button>
+        <input id="ans">
+    </center>
+    <script>
+        function prime(){
+            var num=document.getElementById("num").value;
+            var flag=0;
+            if(num==0 || num==1){
+                flag=1;
+                document.getElementById("ans").value="Not Prime";
+            }
+            for(var i=2;i<=num/2;i++){
+            if(num%i==0){
+                flag=1;
+                document.getElementById("ans").value="Not Prime";
+                break;
+            }
+            if(flag==0){
+                document.getElementById("ans").value="Prime";
+            }
+            else{
+                document.getElementById("ans").value="Not Prime";
+            }
+        }
+        }
+    </script>
+</body>
+</html>

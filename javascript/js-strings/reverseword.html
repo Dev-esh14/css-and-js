@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Reverse word</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="str">
+        <p><input type="button" onclick="reverseword()" value="Let's see"></p>
+        <input type="text" id="ans">
+    </form>
+    <script>
+        function reverseword(){
+            var a=document.getElementById("str").value;
+            var reverse=a.split();
+            var output=[];
+            for(var i=reverse.length-1;i>=0;i--){
+                output+=reverse[i];
+            }
+            document.getElementById("ans").value=output;
+        }
+    </script>
+</body>
+</html>

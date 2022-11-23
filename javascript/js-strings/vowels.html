@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Find the Vowel</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="str">
+        <p><input type="button" onclick="vowel()" value="Let's check"></p>
+        <input type="text" id="ans">
+    </form>
+
+    <script>
+        function vowel(){
+            var a=document.getElementById("str").value;
+            for(let i in a){
+                if(a.charAt(i)=='a' || a.charAt(i)=='e' ||a.charAt(i)=='i' ||a.charAt(i)=='o' ||a.charAt(i)=='u'){
+                    var letter=[];
+                    letter=a.charAt(i);
+                    document.getElementById("ans").value=letter;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

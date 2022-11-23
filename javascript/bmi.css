@@ -1,0 +1,11 @@
+.table{
+    border: 2px;
+    margin-left:30% ;
+    margin-top: 5%;
+    table-layout: auto;
+    width: 50px;
+}
+#result{
+    margin-left: 37%;
+    margin-top: 5%;
+}

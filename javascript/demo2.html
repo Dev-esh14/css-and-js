@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    Enter the value a:<input type="text" id="one" onchange="subHandler()"/>
+    Enter the value b:<input tupe="text"  id="two" onchange="subDataHandler()"/>
+    <button onclick="onSubmitHandler()">Submit</button>
+    <p id="sub"></p>
+    <p id="sub-data"></p>
+    <p id="demo"></p>
+    <script>
+     function onSubmitHandler(){
+         var a = document.getElementById('one').value;
+         var b = document.getElementById('two').value;
+         var result = Number(a) + Number(b);
+         document.getElementById('demo').innerHTML = result;
+     }
+ 
+     function subHandler(){
+        var a = document.getElementById('one').value;
+        document.getElementById('sub').innerHTML = a;
+     }
+ 
+     function subDataHandler(){
+        var a = document.getElementById('two').value;
+        document.getElementById('sub-data').innerHTML = a;
+     }
+    </script>
+</body>
+</html>

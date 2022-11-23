@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Triarea</title>
+</head>
+<body>
+    <center>
+        <h1>Area of Triangle</h1>
+        <p>Enter the base of the triangle:<input type="text" id="base"></p>
+        <br>
+        <p>Enter the height of the triangle:<input type="text" id="height"></p>
+        <br>
+        <button onclick="calculate()">Area</button>
+        <p>Area of the Triangle =<input type="text" id="ans"</p>
+    </center>
+    <script>
+        function calculate(){
+            var a=document.getElementById("base").value;
+            var b=document.getElementById("height").value;
+            var result=(1/2*a*b);
+            document.getElementById("ans").value=result;
+        }
+    </script>
+</body>
+</html>

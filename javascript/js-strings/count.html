@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>count the highest</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="str">
+        <p><input type="button" onclick="count()" value="Let's count"></p>
+        <input type="text" id="ans">
+    </form>
+
+    <script>
+        function count() {
+            var a = document.getElementById("str").value;
+            for (let i = 0; i <= a.length; i++) {
+                let count=0;
+                for(let j=0;j<=a.length;j++){
+                    if (a[i]==a[j]) {
+                        count += 1;
+                    }
+                }
+                if(count>0){
+                document.write(a[i]);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

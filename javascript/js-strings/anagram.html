@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Anagram</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="str1">
+        <input type="text" id="str2">
+        <p><input type="button" onclick="anagram()" value="Let's find"></p>
+        <input type="text" id="ans">
+    </form>
+
+    <script>
+        function anagram(){
+            var a=document.getElementById("str1").value;
+            var b=document.getElementById("str2").value;
+            if(a.length!=b.length){
+                document.getElementById("ans").value="False";
+            }
+            else if(a.length==b.length){
+                var a1=a.split('').sort().join();
+                var b1=b.split('').sort().join();
+                if(a1==b1){
+                    document.getElementById("ans").value="True";
+                }
+                else{
+                    document.getElementById("ans").value="False";
+                }
+            }
+        }
+    </script>
+</body>
+</html>    

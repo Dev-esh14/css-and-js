@@ -1,0 +1,13 @@
+.form{
+    border: 10px rgb(54, 195, 160) solid;
+    border-top-width:7px ;
+    border-left-width:55px ;
+    border-right-width:55px;
+    border-bottom-width:15px ;
+    background-color: rgb(231, 120, 35);
+    width: 400px;
+}
+.reset,.button{
+    background-color: rgb(12, 150, 241);
+    color: aliceblue;
+}

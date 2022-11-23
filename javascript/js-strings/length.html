@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>String length</title>
+</head>
+<body>
+    <h1>String length</h1>
+        <input type="text" id="str">
+        <button onclick="length()">Length</button>
+        <input type="text" id="ans">
+    <script>
+        function length() {
+            let a = document.getElementById("str").value;
+            let strlen = a.length;
+            document.getElementById("ans").value = strlen;
+        }
+    </script>
+</body>
+</html>
